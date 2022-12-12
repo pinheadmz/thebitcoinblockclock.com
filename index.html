@@ -70,6 +70,7 @@
               <p class="text-white-50 mb-0">
                 The Bitcoin Block Clock runs the latest release of Bitcoin Core and stores the entire blockchain on a 1 TB solid-state drive.
                 It connects directly to the Bitcoin peer-to-peer network and visualizes the full node state.
+                There is no API server and no price ticker, just you and the blockchain.
               </p>
             </div>
           </div>
@@ -84,9 +85,10 @@
                 <div class="project-text w-100 my-auto text-center text-lg-left">
                   <h4 class="text-white">Bitcoin Network Status Display</h4>
                   <p class="mb-0 text-white-50">
-                    The current blockchin tip block hash is expressed in binary with its colors derived by the hash itself.
+                    The current blockchain tip block hash is expressed in binary with its colors derived by the hash itself.
                     As transactions are added to the mempool, the top half of the screen fills up and changes color.
                     Recent blocks tick around the outside of the clock face, filled in when a wallet transaction is confirmed.
+                    Difficulty adjustment and halvening cycles are drawn as progress bars that grow and change color.
                   </p>
                   <hr class="d-none d-lg-block mb-0 ms-0" />
                 </div>
@@ -155,13 +157,16 @@
             <p class="text-white-50">
               The Bitcoin Block Clock software is open source and available
               <a href="https://github.com/pinheadmz/ClockBlocker">on GitHub</a>
-              along with a reccomended hardware and parts list. Each unit is built from:
+              along with a recommended hardware, parts list and instruction manual.
+              There is currently no web-based UI and users are encouraged to learn
+              simple SSH and command-line tools.<br>
+              Each unit is built from:
             </p>
               <ul style="text-align: left">
-                <li>Bitcoin Core</li>
-                <li>Rapberry Pi 4</li>
+                <li>Bitcoin Core 23.0 (or latest release)</li>
+                <li>Raspberry Pi 4 Model B, 4GB RAM (or current best model)</li>
                 <li>32 x 32 RGB LED matrix</li>
-                <li>1 TB SSD</li>
+                <li>1 TB USB3 solid-state drive</li>
                 <li>5" HDMI display</li>
                 <li>Mini wireless keyboard</li>
                 <li>9" acrylic display case</li>
@@ -227,14 +232,20 @@
         </div>
       </div>
 
+      <iframe class="video"
+              src="https://www.youtube-nocookie.com/embed/UsQKiMij6cY"
+              title="The Bitcoin Block Clock"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen></iframe>
 
-    <!-- social -->
-    <div class="contact-section">
-      <div class="social d-flex justify-content-center py-5">
-        <a class="mx-2" href="https://twitter.com/MatthewZipkin"><i class="fab fa-twitter"></i></a>
-        <a class="mx-2" href="https://github.com/pinheadmz/ClockBlocker"><i class="fab fa-github"></i></a>
+      <!-- social -->
+      <div class="contact-section">
+        <div class="social d-flex justify-content-center py-5">
+          <a class="mx-2" href="https://twitter.com/MatthewZipkin"><i class="fab fa-twitter"></i></a>
+          <a class="mx-2" href="https://github.com/pinheadmz/ClockBlocker"><i class="fab fa-github"></i></a>
+        </div>
       </div>
-    </div>
     </section>
 
     <!-- Footer-->

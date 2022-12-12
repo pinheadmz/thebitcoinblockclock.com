@@ -4234,6 +4234,11 @@ textarea.form-control-lg {
   overflow-y: auto;
 }
 
+.video {
+  width:  90%;
+  min-height: 300px;
+}
+
 @media (min-width: 576px) {
   .navbar-expand-sm {
     flex-wrap: nowrap;
@@ -4288,6 +4293,11 @@ textarea.form-control-lg {
   }
 }
 @media (min-width: 768px) {
+  .video {
+    width:  50%;
+    min-height: 600px;
+  }
+
   .navbar-expand-md {
     flex-wrap: nowrap;
     justify-content: flex-start;
